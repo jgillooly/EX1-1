@@ -30,8 +30,6 @@ int main()
     std::cout << "\nsize of iptr = " << sizeof(iptr);
     std::cout << "\nvalue iptr points to is " << *iptr;
 
-
-
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
