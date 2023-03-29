@@ -25,10 +25,12 @@ int main()
 
     int* iptr = NULL;
     iptr = &ival1;
+    long* lptr = &lval3;
+
     std::cout << "\nValue of ptr var = " << iptr;
     std::cout << "\niptr addresss = " << &iptr;
     std::cout << "\nsize of iptr = " << sizeof(iptr);
-    std::cout << "\nvalue iptr points to is " << *iptr;
+    std::cout << "\nvalue iptr points to is " << *(lptr + 1);
 
 }
 
