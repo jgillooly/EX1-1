@@ -5,7 +5,23 @@
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    std::cout << "Week 01 - Hello World!\n";
+
+    int ival1 = -1;
+    int ival4 = 34;
+    short shval2 = 3;
+    long lval3 = 1234567890;
+    float fval5 = 3.5;
+    char chval1 = 'a';
+
+    std::cout << "ival1 = ";
+    std::cout << ival1 << " address = " << &ival1;
+    std::cout << "\nshval2 = " << shval2 << " address = " << &shval2;
+    std::cout << "\nival4 = " << ival4 << " address = " << &ival4;
+    
+    std::cout << "\n***** Size of char = " << sizeof(chval1);
+    std::cout << "\n***** Size of short = " << sizeof(shval2);
+    std::cout << "\n***** Size of int = " << sizeof(ival1);
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
