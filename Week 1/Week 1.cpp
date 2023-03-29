@@ -22,6 +22,16 @@ int main()
     std::cout << "\n***** Size of char = " << sizeof(chval1);
     std::cout << "\n***** Size of short = " << sizeof(shval2);
     std::cout << "\n***** Size of int = " << sizeof(ival1);
+
+    int* iptr = NULL;
+    iptr = &ival1;
+    std::cout << "\nValue of ptr var = " << iptr;
+    std::cout << "\niptr addresss = " << &iptr;
+    std::cout << "\nsize of iptr = " << sizeof(iptr);
+    std::cout << "\nvalue iptr points to is " << *iptr;
+
+
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
