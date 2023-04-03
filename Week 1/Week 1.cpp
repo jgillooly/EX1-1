@@ -32,6 +32,18 @@ int main()
     std::cout << "\nsize of iptr = " << sizeof(iptr);
     std::cout << "\nvalue iptr points to is " << *(lptr + 1);
 
+    // heap memory
+    char* chTemp = NULL;
+    chTemp = (char*)malloc(20);
+    memset(chTemp, '\0', 20);
+    //memset(chTemp, NULL, 20);
+    //do stuff with the memory then free it
+    free(chTemp);
+    chTemp = NULL; //good practice
+
+    std::cout << "\n\nEND OF PROGRAM";
+
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
