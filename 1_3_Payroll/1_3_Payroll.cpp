@@ -17,6 +17,7 @@ int main()
     float fGrossPay = 0;
     float netPay = 0;
     float payRate = 0; //get
+    int totalHours = 0;
 
     cout << "\nEnter your name: ";
     cin >> name;
@@ -24,15 +25,13 @@ int main()
     cout << "\nEnter your hourly pay rate: ";
     cin >> payRate;
 
-    cout << "\n\nEnter number of days worked (max 7): ";
+    cout << "\nEnter number of days worked (max 7): ";
     cin >> uCount;
-
-    cout << "\nYour number is: " << uCount;
 
     for (int i = 0; i < uCount; i++)
     {
         // get values for hours worked
-        cout << "\nEnter hours worked for day " << (i + 1) << ":";
+        cout << "\nEnter hours worked for day " << (i + 1) << ": ";
         cin >> hours[i];
     }
 
@@ -41,12 +40,15 @@ int main()
     {
         if (hours[i] !=52428) {
             fGrossPay += (hours[i] * payRate);
+            totalHours += hours[i];
         }
     }
 
-    cout << "\nGross pay is: " << fGrossPay;
+    cout << name << " worked for " << totalHours << " hours at a rate of $" << payRate << " per hour";
+
+    cout << "\nGross pay is: $" << fGrossPay;
     netPay = fGrossPay - (fGrossPay * Tax);
-    cout << "\nNet pay is: " << netPay;
+    cout << "\nNet pay is: $" << netPay;
 
     cout << "\nEnd of app";
 
