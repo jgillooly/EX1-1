@@ -44,7 +44,7 @@ int main()
         }
     }
 
-    cout << name << " worked for " << totalHours << " hours at a rate of $" << payRate << " per hour";
+    cout << "\n" << name << " worked for " << totalHours << " hours at a rate of $" << payRate << " per hour";
 
     cout << "\nGross pay is: $" << fGrossPay;
     netPay = fGrossPay - (fGrossPay * Tax);
