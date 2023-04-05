@@ -36,12 +36,10 @@ int main()
     }
 
     //calc pay and taxes and output
-    for (int i = 0; i < size(hours); i++)
+    for (int i = 0; i < uCount; i++)
     {
-        if (hours[i] !=52428) {
             fGrossPay += (hours[i] * payRate);
             totalHours += hours[i];
-        }
     }
 
     cout << "\n" << name << " worked for " << totalHours << " hours at a rate of $" << payRate << " per hour";
