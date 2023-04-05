@@ -24,7 +24,7 @@ int main()
     //cout << sizeof(Employee);
     delete empPtr;
 
-    //I WILL NEED THIS LATER
+    //!!!! I WILL NEED THIS LATER !!!!
     cout << "\n size 1: " << (sizeof(workers)/sizeof(workers[0]));
     cout << "\n size 2: " << std::size(workers);
 }
