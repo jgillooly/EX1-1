@@ -1,11 +1,32 @@
 // 2_1_DataType.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
-
+using namespace std;
 #include <iostream>
+#include "Employee.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    std::cout << "2_1_DataTypes Hello World!\n";
+
+    Employee workers[4];
+    workers[0].age = 23;
+
+    Employee* empPtr = new Employee(); // heap
+    empPtr->age = 42;
+
+    void* ptr = malloc(20);
+    int* intPtr = new int;
+    *intPtr = 42;
+    printf("\n hex %00.x", *intPtr);
+    printf("\n hex %00.x", *(intPtr+1));
+
+    //do stuff with heap
+    //cout << sizeof(Employee);
+    delete empPtr;
+
+    //I WILL NEED THIS LATER
+    cout << "\n size 1: " << (sizeof(workers)/sizeof(workers[0]));
+    cout << "\n size 2: " << std::size(workers);
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

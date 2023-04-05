@@ -36,7 +36,7 @@ int main()
     }
 
     //calc pay and taxes and output
-    for (int i = 0; i < sizeof(hours); i++)
+    for (int i = 0; i < size(hours); i++)
     {
         if (hours[i] !=52428) {
             fGrossPay += (hours[i] * payRate);
