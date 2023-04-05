@@ -2,12 +2,18 @@
 class Employee
 {
 public:
+	static const int MAXDAYS = 7;
 	char name[35];
 	int age = 0;
-	float hoursPerDay[7];
+	const float Tax = 0.1;
+	float hoursPerDay[MAXDAYS];
+	int  uCount;
+	float payRate;
 public:
 	Employee();
-	void Read();
+	void Read(int num);
 	void Write();
+private:
+	void printName();
 };
 

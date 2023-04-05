@@ -7,8 +7,32 @@ using namespace std;
 int main()
 {
     std::cout << "2_1_DataTypes Hello World!\n";
+    const unsigned short MAXEMP = 20;
+    unsigned short empAmt = 0;
+    
+    Employee workers[MAXEMP];
 
-    Employee workers[4];
+    cout << "\nEnter number of employees: ";
+    cin >> empAmt;
+
+    if (empAmt > MAXEMP) empAmt = MAXEMP;
+
+
+
+    for (int i = 0; i < empAmt; i++)
+    {
+        // call read for each employee
+        workers[i].Read(i+1);
+    }
+
+    for (int i = 0; i < empAmt; i++)
+    {
+        // call read for each employee
+        workers[i].Write();
+        cout << "\n";
+    }
+
+    /*
     workers[0].age = 23;
 
     Employee* empPtr = new Employee(); // heap
@@ -23,10 +47,14 @@ int main()
     //do stuff with heap
     //cout << sizeof(Employee);
     delete empPtr;
-
+    delete intPtr;
+   
     //!!!! I WILL NEED THIS LATER !!!!
     cout << "\n size 1: " << (sizeof(workers)/sizeof(workers[0]));
     cout << "\n size 2: " << std::size(workers);
+     */
+
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
