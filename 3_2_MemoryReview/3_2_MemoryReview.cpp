@@ -131,7 +131,7 @@ int main()
 		cout << endl;
 	}
 		// deallocate the person pointer to free up the memory block (remember it's an array)
-	delete people;
+	delete [2] people;
 }
 
 
