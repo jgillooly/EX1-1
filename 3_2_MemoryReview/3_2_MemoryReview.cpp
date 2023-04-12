@@ -127,8 +127,7 @@ int main()
 	for (int i = 0; i < 2; i++)
 	{
 		Person* ptr = (people + i);
-		cout << (ptr)->name << " " << (ptr)->id;
-		cout << endl;
+		cout << (ptr)->name << " " << (ptr)->id << endl;
 	}
 		// deallocate the person pointer to free up the memory block (remember it's an array)
 	delete [2] people;
