@@ -2,7 +2,8 @@
 //
 
 #include <iostream>
-
+#include "MyDerived.h"
+using namespace std;
 int main()
 {
     std::cout << "Week 03 - Hello World!\n";
@@ -10,6 +11,13 @@ int main()
     int myInt = 5;
     int* intPtr = &myInt; //pointer to an int
     int& intRef = myInt; //reference to an int
+
+
+    MyBase base;
+    MyDerived der;
+
+    cout << endl << "AddSomething = " << der.AddSomething(1);
+
 
 }
 

@@ -10,7 +10,8 @@ public:
 	int  uCount;
 	float payRate;
 public:
-	Employee();
+	Employee(); //constructor
+	~Employee(); //destructor
 	void Read(int num);
 	void Write();
 private:

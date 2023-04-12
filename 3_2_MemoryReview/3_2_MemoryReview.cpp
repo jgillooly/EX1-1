@@ -109,7 +109,12 @@ int main()
 		cout << *(aryPtr + (i)) << endl;
 	}
 		// use a for loop and output the address of each of the ints in the array
+	for (int i = 0; i < 6; i++)
+	{
+		cout << aryPtr + (i) << endl;
+	}
 		// deallocate the int pointer to free up the memory block (remember it's an array)
+	delete aryPtr;
 		// ** STRUCTURE **
 		//
 		// create a Person pointer that points at an array of Persons allocated on the heap, the array size should be 2
@@ -130,7 +135,7 @@ int main()
 		cout << (ptr)->name << " " << (ptr)->id << endl;
 	}
 		// deallocate the person pointer to free up the memory block (remember it's an array)
-	delete [2] people;
+	delete[2] people;
 }
 
 

@@ -10,6 +10,10 @@ Employee::Employee() {
 	memset(&name, NULL, sizeof(name));
 	memset(&hoursPerDay, NULL, sizeof(hoursPerDay));
 }
+
+Employee::~Employee() {
+
+}
 void Employee::Read(int num) {
 	//put read code here
     
