@@ -1,7 +1,6 @@
 #pragma once
 #include "Animal.h"
-class Bird :
-    public Animal
+class Bird : public Animal
 {
 private:
     int wingspan;

@@ -1,7 +1,6 @@
 #pragma once
 #include "Animal.h"
-class Fish :
-    public Animal
+class Fish : public Animal
 {
 private:
     string habitat;
