@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week 03", "Week 03\Week 03.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3_2_MemoryReview", "3_2_MemoryReview\3_2_MemoryReview.vcxproj", "{D6F9AC5F-8965-423C-A2CC-23D5255F4A29}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week 04", "Week 04\Week 04.vcxproj", "{2E8F0EAE-C29D-48E9-A6FE-BCEF3A09E414}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -71,6 +73,14 @@ Global
 		{D6F9AC5F-8965-423C-A2CC-23D5255F4A29}.Release|x64.Build.0 = Release|x64
 		{D6F9AC5F-8965-423C-A2CC-23D5255F4A29}.Release|x86.ActiveCfg = Release|Win32
 		{D6F9AC5F-8965-423C-A2CC-23D5255F4A29}.Release|x86.Build.0 = Release|Win32
+		{2E8F0EAE-C29D-48E9-A6FE-BCEF3A09E414}.Debug|x64.ActiveCfg = Debug|x64
+		{2E8F0EAE-C29D-48E9-A6FE-BCEF3A09E414}.Debug|x64.Build.0 = Debug|x64
+		{2E8F0EAE-C29D-48E9-A6FE-BCEF3A09E414}.Debug|x86.ActiveCfg = Debug|Win32
+		{2E8F0EAE-C29D-48E9-A6FE-BCEF3A09E414}.Debug|x86.Build.0 = Debug|Win32
+		{2E8F0EAE-C29D-48E9-A6FE-BCEF3A09E414}.Release|x64.ActiveCfg = Release|x64
+		{2E8F0EAE-C29D-48E9-A6FE-BCEF3A09E414}.Release|x64.Build.0 = Release|x64
+		{2E8F0EAE-C29D-48E9-A6FE-BCEF3A09E414}.Release|x86.ActiveCfg = Release|Win32
+		{2E8F0EAE-C29D-48E9-A6FE-BCEF3A09E414}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
