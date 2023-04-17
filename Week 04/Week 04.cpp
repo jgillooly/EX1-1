@@ -15,8 +15,6 @@ int main()
     while (iMenu != 6) {
         cout << endl << "Enter a Menu Option: ";
 
-
-
         cout << endl << "6) Quit" << endl;
 
         iMenu = input.GetUserInt("asdf", 1, 6);
