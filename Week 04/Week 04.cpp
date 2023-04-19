@@ -22,7 +22,7 @@ int main()
         cout << endl << "1) Add an Animal";
         cout << endl << "6) Quit" << endl;
 
-        iMenu = input.GetUserInt("asdf", 1, 6);
+        iMenu = input.GetUserInt(1, 6);
 
         switch (iMenu) {
         case 1:
@@ -38,6 +38,7 @@ int main()
                 break;
             }//inner switch
             animal->Read(cout, cin);
+            db.add(animal);
             break;
         default:
             break;

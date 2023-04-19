@@ -13,3 +13,8 @@ std::unique_ptr<Animal> Database::create(Animal::eType type) {
 
     return std::unique_ptr<Animal>{animal};
 }
+
+void Database::add(std::unique_ptr<Animal>& animal) {
+    _animals.push_back(std::move(animal));
+    cout << endl << "***List Size = " << this->_animals.size();
+}
