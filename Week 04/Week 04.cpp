@@ -3,6 +3,8 @@
 
 #include <iostream>
 #include "MyInput.h"
+#include "Bird.h"
+#include "Fish.h"
 using namespace std;
 
 int main()
