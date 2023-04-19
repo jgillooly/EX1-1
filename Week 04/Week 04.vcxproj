@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="Animal.cpp" />
     <ClCompile Include="Bird.cpp" />
+    <ClCompile Include="Database.cpp" />
     <ClCompile Include="Fish.cpp" />
     <ClCompile Include="MyInput.cpp" />
     <ClCompile Include="Week 04.cpp" />
@@ -136,6 +137,7 @@
   <ItemGroup>
     <ClInclude Include="Animal.h" />
     <ClInclude Include="Bird.h" />
+    <ClInclude Include="Database.h" />
     <ClInclude Include="Fish.h" />
     <ClInclude Include="MyInput.h" />
   </ItemGroup>
