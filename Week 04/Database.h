@@ -10,5 +10,8 @@ private:
 public:
 	std::unique_ptr<Animal> create(Animal::eType type);
 	void add(std::unique_ptr<Animal>& animal);
+	void displayAll(std::ostream& ostr);
+	void display(std::ostream& ostr, string name);
+	void display(std::ostream& ostr, Animal::eType type);
 };
 

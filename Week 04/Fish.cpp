@@ -6,21 +6,28 @@ void Fish::Read(std::ostream& ostr, std::istream& istr)
 
 	//get fish details
 	ostr << endl << "Enter Habitat: ";
-	istr >> this->habitat;
+	istr >> this->_habitat;
 	ostr << endl << "Enter Number of Teeth: ";
-	istr >> this->teeth;
+	istr >> this->_teeth;
 	ostr << endl << "Enter Number of Fins: ";
-	istr >> this->fins;
+	istr >> this->_fins;
+}
+
+void Fish::Write(std::ostream& ostr) {
+	Animal::Write(ostr);
+	ostr << endl << "Habitat: " << this->_habitat;
+	ostr << endl << "Number of Teeth: " << this->_teeth;
+	ostr << endl << "Number of Fins: " << this->_fins;
 }
 
 string Fish::getHabitat() {
-	return habitat;
+	return _habitat;
 }
 
 int Fish::getTeeth() {
-	return teeth;
+	return _teeth;
 }
 
 int Fish::getFins() {
-	return fins;
+	return _fins;
 }

@@ -20,7 +20,9 @@ public:
 	void setColor(string col) { color = col; }
 
 	virtual void Read(std::ostream& ostr, std::istream& istr);
+	virtual void Write(std::ostream& ostr);
 
 	virtual eType getType() = 0; //Pure virtual method
+	string getTypeString();
 };
 

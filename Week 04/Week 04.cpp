@@ -16,10 +16,15 @@ int main()
     Database db;
     std::unique_ptr<Animal> animal;
     int iMenu = 0;
+    string name = "";
+    Animal::eType type;
 
     while (iMenu != 6) {
         cout << endl << "Enter a Menu Option: ";
         cout << endl << "1) Add an Animal";
+        cout << endl << "2) Display all Animals";
+        cout << endl << "3) Display by Name";
+        cout << endl << "4) Display by Type";
         cout << endl << "6) Quit" << endl;
 
         iMenu = input.GetUserInt(1, 6);
@@ -40,7 +45,20 @@ int main()
             animal->Read(cout, cin);
             db.add(animal);
             break;
-        default:
+        case 2:
+            db.displayAll(cout);
+            break;
+        case 3:
+            cout << endl << "Enter a name to display by: ";
+            cin >> name;
+            db.display(cout, name);
+            break;
+        case 4:
+            string name = "";
+            cout << endl << "Choose a type to display by: ";
+            cout << "1) Fish" << endl << "2) Bird" << endl;
+            type = (input.GetUserInt(1, 2) == 1 ? Animal::eType::Fish : Animal::eType::Bird);
+            db.display(cout, name);
             break;
         }//outer switch
 
