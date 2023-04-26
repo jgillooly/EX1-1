@@ -7,6 +7,11 @@ public:
 
     void Read(std::ostream& ostr, std::istream& istr) override;
     void Write(std::ostream& ostr) override;
+
+    void Read(std::ifstream& istr) override;
+    void Write(std::ofstream& ostr) override;
+
+
 private:
     string _habitat;
     int _teeth = 0;

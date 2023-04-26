@@ -19,15 +19,18 @@ int main()
     string name = "";
     Animal::eType type;
 
-    while (iMenu != 6) {
+    while (iMenu != 8) {
         cout << endl << "Enter a Menu Option: ";
         cout << endl << "1) Add an Animal";
         cout << endl << "2) Display all Animals";
         cout << endl << "3) Display by Name";
         cout << endl << "4) Display by Type";
-        cout << endl << "6) Quit" << endl;
+        cout << endl << "5) Remove All";
+        cout << endl << "6) Load from File";
+        cout << endl << "7) Write to File";
+        cout << endl << "8) Quit" << endl;
 
-        iMenu = input.GetUserInt(1, 6);
+        iMenu = input.GetUserInt(1, 8);
 
         switch (iMenu) {
         case 1:
@@ -54,11 +57,14 @@ int main()
             db.display(cout, name);
             break;
         case 4:
-            string name = "";
             cout << endl << "Choose a type to display by: ";
-            cout << "1) Fish" << endl << "2) Bird" << endl;
+            cout << endl << "1) Fish" << endl << "2) Bird" << endl;
             type = (input.GetUserInt(1, 2) == 1 ? Animal::eType::Fish : Animal::eType::Bird);
-            db.display(cout, name);
+            db.display(cout, type);
+            break;
+        case 7: //Save to file
+            db.save(db.filename);
+            cout << endl << "Save successful(?)";
             break;
         }//outer switch
 
