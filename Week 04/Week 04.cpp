@@ -33,7 +33,7 @@ int main()
         iMenu = input.GetUserInt(1, 8);
 
         switch (iMenu) {
-        case 1:
+        case 1: //New Animal
             int iType;
             cout << "1) Fish" << endl << "2) Bird" << endl;
             iType = input.GetUserInt(1, 2);
@@ -48,15 +48,15 @@ int main()
             animal->Read(cout, cin);
             db.add(animal);
             break;
-        case 2:
+        case 2: //Display Animals
             db.displayAll(cout);
             break;
-        case 3:
+        case 3: //Display by Name
             cout << endl << "Enter a name to display by: ";
             cin >> name;
             db.display(cout, name);
             break;
-        case 4:
+        case 4: //Display by Type
             cout << endl << "Choose a type to display by: ";
             cout << endl << "1) Fish" << endl << "2) Bird" << endl;
             type = (input.GetUserInt(1, 2) == 1 ? Animal::eType::Fish : Animal::eType::Bird);
