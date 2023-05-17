@@ -42,3 +42,23 @@ string Animal::getTypeString() {
 		break;
 	}
 }
+
+std::istream& operator >> (std::istream& stream, Animal& animal) {
+	animal.Read(std::cout, stream);
+	return stream;
+}
+
+std::ostream& operator<<(std::ostream& stream, Animal& animal) {
+	animal.Write(stream);
+	return stream;
+}
+
+std::ifstream& operator >> (std::ifstream& stream, Animal& animal) {
+	animal.Read(stream);
+	return stream;
+}
+
+std::ofstream& operator << (std::ofstream& stream, Animal& animal) {
+	animal.Write(stream);
+	return stream;
+}

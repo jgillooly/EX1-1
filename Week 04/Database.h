@@ -3,6 +3,7 @@
 #include "Fish.h"
 #include "Bird.h"
 #include <list>
+using namespace std;
 class Database
 {
 private:
@@ -17,6 +18,10 @@ public:
 	void display(std::ostream& ostr, Animal::eType type);
 	void display(std::ostream& ostr, int num);
 
-	void save(const string filename);
+	void save(const string& filename);
+	void load(const string& filename);
+public:
+	void removeAll();
+
 };
 

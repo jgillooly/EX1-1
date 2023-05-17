@@ -18,6 +18,7 @@ int main()
     int iMenu = 0;
     string name = "";
     Animal::eType type;
+    int confirm = 0;
 
     while (iMenu != 8) {
         cout << endl << "Enter a Menu Option: ";
@@ -27,7 +28,7 @@ int main()
         cout << endl << "4) Display by Type";
         cout << endl << "5) Remove All";
         cout << endl << "6) Load from File";
-        cout << endl << "7) Write to File";
+        cout << endl << "7) Save to File";
         cout << endl << "8) Quit" << endl;
 
         iMenu = input.GetUserInt(1, 8);
@@ -61,6 +62,17 @@ int main()
             cout << endl << "1) Fish" << endl << "2) Bird" << endl;
             type = (input.GetUserInt(1, 2) == 1 ? Animal::eType::Fish : Animal::eType::Bird);
             db.display(cout, type);
+            break;
+        case 5: //Clear database
+            cout << endl << "Are you sure? (1:Yes/2:No)";
+            confirm = input.GetUserInt(1, 2);
+            if (confirm == 1) {
+                db.removeAll();
+                cout << endl << "Database Cleared";
+            }
+        case 6: //Load from file
+            db.load(db.filename);
+            cout << endl << "Load successful(?)";
             break;
         case 7: //Save to file
             db.save(db.filename);

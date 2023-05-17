@@ -28,5 +28,14 @@ public:
 
 	virtual eType getType() = 0; //Pure virtual method
 	string getTypeString();
+
+	friend bool operator == (const std::unique_ptr<Animal>& animal, const std::string& name) { return animal->getName() == name; }
+	friend bool operator == (const std::unique_ptr<Animal>& animal, const Animal::eType& type) { return animal->getType() == type; }
+	//
+	friend std::istream& operator >> (std::istream& stream, Animal& animal);
+	friend std::ostream& operator << (std::ostream& stream, Animal& animal);
+	//
+	friend std::ifstream& operator >> (std::ifstream& stream, Animal& animal);
+	friend std::ofstream& operator << (std::ofstream& stream, Animal& animal);
 };
 
