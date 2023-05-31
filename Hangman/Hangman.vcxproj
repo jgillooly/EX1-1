@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{e613870b-c6d7-4fc6-87e8-d2e25d3dd011}</ProjectGuid>
-    <RootNamespace>Week07</RootNamespace>
+    <ProjectGuid>{2aadac2d-1f09-4876-86b3-43278a75ecb3}</ProjectGuid>
+    <RootNamespace>Hangman</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,12 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="vector.cpp" />
-    <ClCompile Include="Week07.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="list.h" />
-    <ClInclude Include="vector.h" />
+    <ClCompile Include="Hangman.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

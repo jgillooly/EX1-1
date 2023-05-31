@@ -1,19 +1,12 @@
-// tempo.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// Hangman.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
 #include <iostream>
-#include <bitset>
-using namespace std;
 
-
-int main() {
-    uint8_t b1 = 0b01101010;
-    uint8_t b2 = 0b01000010;
-    uint16_t b3 = (b1 << 8) | b2;
-    std::bitset<16> y(b3);
-    cout << y;
+int main()
+{
+    std::cout << "Hello World!\n";
 }
-
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
