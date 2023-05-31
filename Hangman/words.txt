@@ -1,0 +1,10 @@
+church
+population
+teaching
+skill
+chocolate
+winner
+competition
+discussion
+complaint
+employer
